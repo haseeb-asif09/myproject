@@ -1,0 +1,122 @@
+/* Container styles */
+.registration-container {
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .form-container {
+    background-color: rgba(233, 241, 243, 0.8);
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 4, 255, 0.2);
+    max-width: 90%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 15px;
+  }
+  
+  p {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input, select, textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    font-size: 16px;
+  }
+  
+  textarea {
+    min-height: 120px;
+  }
+  
+  .button-container {
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #e75f3d;
+    color: rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 16px;
+    border: none;
+    margin: 5px 0;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  button[type="file"] {
+    background-color: #007bff;
+    padding: 10px 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  button[type="file"]:hover {
+    background-color: #000000;
+    transform: scale(1.05); /* Slightly increase size on hover */
+  }
+  
+  .image-preview {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  img {
+    max-width: 100%;
+    max-height: 200px;
+    border-radius: 8px;
+  }
+  
+  /* New Section: Back Button */
+  .back-link {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+    padding: 8px;
+    background-color: #010002;
+    border-radius: 5px;
+    width: 100%;
+  }
+  
+  .back-link:hover {
+    background-color: #c53737;
+    color: #000000;
+  }
+  
+  /* Add spacing between the buttons */
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+  

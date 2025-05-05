@@ -1,0 +1,70 @@
+.about-container {
+    padding: 60px 20px;
+    background: linear-gradient(to right, #f0f4f8, #e6f7ff);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+  
+  .about-container h1 {
+    font-size: 3rem;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 700;
+  }
+  
+  .about-container p {
+    font-size: 1.2rem;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+  }
+  
+  .places-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    padding: 0 30px;
+  }
+  
+  .place-card {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    text-align: left;
+    border-left: 6px solid #00bcd4;
+  }
+  
+  .place-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  }
+  
+  .place-card h2 {
+    color: #00796b;
+    margin-bottom: 12px;
+    font-size: 1.5rem;
+  }
+  
+  .place-card p {
+    font-size: 1rem;
+    margin: 6px 0;
+    color: #444;
+  }
+  
+  .place-card a {
+    display: inline-block;
+    margin-top: 12px;
+    color: #009688;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+  }
+  
+  .place-card a:hover {
+    color: #004d40;
+    text-decoration: underline;
+  }
+  

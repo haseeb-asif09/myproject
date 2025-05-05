@@ -1,0 +1,115 @@
+/* src/Pages.css */
+
+.pages-container {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 50px;
+    color: #fff;
+    backdrop-filter: blur(8px); /* Increased blur for a more frosted effect */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .pages-content {
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 25px; /* Soft, rounded corners */
+    padding: 40px;
+    max-width: 900px;
+    width: 100%;
+    box-shadow: 0 15px 35px rgba(0, 255, 229, 0.4); /* More prominent shadow */
+    text-align: center;
+  }
+  
+  .pages-heading {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #00ffe5; /* Neon greenish color for heading */
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  
+  .restaurant-card {
+    background-color: rgba(255, 255, 255, 0.12); /* Lighter card background */
+    border: 2px solid #00ffe5;
+    padding: 25px;
+    border-radius: 20px;
+    margin-bottom: 25px;
+    box-shadow: 0 10px 20px rgba(0, 255, 229, 0.3);
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  }
+  
+  .restaurant-card:hover {
+    transform: translateY(-8px); /* Slight lift effect */
+    box-shadow: 0 15px 35px rgba(0, 255, 229, 0.6); /* Stronger hover shadow */
+  }
+  
+  .restaurant-name {
+    color: #00ffe5;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+  }
+  
+  .restaurant-link,
+  .restaurant-map {
+    color: #ffcc00;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .restaurant-link:hover,
+  .restaurant-map:hover {
+    color: #ffff00;
+    transform: translateX(5px); /* Subtle move on hover */
+  }
+  
+  .restaurant-link:focus,
+  .restaurant-map:focus {
+    outline: none; /* Removes the focus outline */
+  }
+  
+  .restaurant-link::before,
+  .restaurant-map::before {
+    content: "👉";
+    margin-right: 10px;
+    font-size: 1.2rem;
+    color: #ffcc00;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .restaurant-link:hover::before,
+  .restaurant-map:hover::before {
+    opacity: 1;
+  }
+  
+  @media (max-width: 768px) {
+    .pages-heading {
+      font-size: 2.2rem;
+    }
+  
+    .restaurant-card {
+      padding: 20px;
+    }
+  
+    .restaurant-name {
+      font-size: 1.5rem;
+    }
+  
+    .restaurant-link,
+    .restaurant-map {
+      font-size: 1rem;
+    }
+  }
+  
